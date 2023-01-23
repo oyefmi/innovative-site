@@ -1,0 +1,9 @@
+.linkbox {
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75vw 40vh; 
+        -webkit-background-size: 75vw 40vh; 
+        -moz-background-size: 75vw 40vh; 
+        -o-background-size: 75vw 40vh;
+}

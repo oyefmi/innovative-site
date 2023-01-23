@@ -1,0 +1,52 @@
+.home-cover {
+    background: url(../../../assets/images/isi-coverimage.jpg);
+    height: 110vh; 
+    background-repeat: no-repeat;
+    background-position: center -10vh;
+    background-size: 100vw 120vh; 
+        -webkit-background-size: 100vw 120vh; 
+        -moz-background-size: 100vw 120vh; 
+        -o-background-size: 100vw 120vh;
+}
+
+.home-overlay {
+    background-color: rgba(137, 207, 240, .56);
+    height: 100%;
+    /* opacity: .6; */
+}
+
+.home-content {
+    width: 30%;
+    margin: 1em;
+    margin-left: 1.5rem;
+    padding-top: 15%;
+}
+
+#homecover-text {
+    background-color: rgba(137, 207, 240, .7);
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 200;
+}
+
+button.btn {
+    margin-top: 1rem;
+    background-color: rgba(4, 43, 161, .8);
+    color: #ffffff;
+    font-size: 21px;
+    padding: 18px 50px 14px;
+    border-radius: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    /* text-transform: uppercase; */
+    line-height: 100%;
+    letter-spacing: 2px;
+    z-index: 100;
+}
+
+.home-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

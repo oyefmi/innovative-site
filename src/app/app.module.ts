@@ -3,15 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomepageComponent } from './pages/homepage/homepage/homepage.component';
-import { BannerlinkComponent } from './components/bannerlink/bannerlink.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { LinkboxComponent } from './components/linkbox/linkbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomepageComponent,
-    BannerlinkComponent,
+    LinkboxComponent,
     
   ],
   imports: [

@@ -1,3 +1,8 @@
+.home {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .home-cover {
     background: url(../../../assets/images/isi-coverimage.jpg);
     height: 110vh; 
@@ -9,12 +14,6 @@
         -o-background-size: 100vw 120vh;
 }
 
-.home-overlay {
-    background-color: rgba(137, 207, 240, .56);
-    height: 100%;
-    /* opacity: .6; */
-}
-
 .home-content {
     width: 30%;
     margin: 1em;
@@ -23,15 +22,18 @@
 }
 
 #homecover-text {
-    background-color: rgba(137, 207, 240, .7);
+    /* background-color: rgba(89, 126, 248, .56); */
     color: #ffffff;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 200;
+    text-transform: uppercase;
+    text-shadow: #597ef8 5px 0 10px;
+    /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0); */
 }
 
 button.btn {
     margin-top: 1rem;
-    background-color: rgba(4, 43, 161, .8);
+    background-color: rgba(12, 52, 173, 0.7);
     color: #ffffff;
     font-size: 21px;
     padding: 18px 50px 14px;
@@ -39,14 +41,31 @@ button.btn {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     text-align: center;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     line-height: 100%;
     letter-spacing: 2px;
     z-index: 100;
 }
 
 .home-links {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.mission {
+    height: 50vh;
+    justify-content: center;
     align-items: center;
+}
+
+.mission-top {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mission-btm {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

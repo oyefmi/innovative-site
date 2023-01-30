@@ -7,14 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  adultProgramImg: string;
-  childProgramImg: string;
-  residences: string;
+  adultLinkImg: string;
+  youthLinkImg: string;
+  residencesLinkImg: string;
+  adultLinkTitle: string;
+  youthLinkTitle: string;
+  residencesLinkTitle: string;
 
   constructor() { 
-    this.adultProgramImg = '../../../assets/images/adult-page-header.jpeg';
-    this.childProgramImg = '../../../assets/images/child_link_img.jpeg';
-    this.residences = '../../../assets/images/vacancy-1.jpeg';
+    this.adultLinkImg = '../../../assets/images/adult-page-header.jpeg';
+    this.youthLinkImg = '../../../assets/images/child_link_img.jpeg';
+    this.residencesLinkImg = '../../../assets/images/vacancy-1.jpeg';
+    this.adultLinkTitle = "Adult Program";
+    this.youthLinkTitle = "Youth Program";
+    this.residencesLinkTitle = "Residential Care Units";
   }
 
   ngOnInit(): void {

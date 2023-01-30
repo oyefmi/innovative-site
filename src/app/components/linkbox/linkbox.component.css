@@ -1,9 +1,22 @@
 .linkbox {
-  height: 40vh;
+  height: 30vh;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 75vw 40vh; 
-        -webkit-background-size: 75vw 40vh; 
+  background-size: 100vw 40vh; 
+        -webkit-background-size: 34vw 30vh; 
         -moz-background-size: 75vw 40vh; 
         -o-background-size: 75vw 40vh;
+  border-style: solid;
+  border-width: .04em;
+  border-color: #ffffff;
+
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  top: 75%;
+  color: #ffffff;
+  text-shadow: #597ef8 1px 0 10px;
 }

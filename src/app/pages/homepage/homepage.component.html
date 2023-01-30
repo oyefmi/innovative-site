@@ -1,4 +1,4 @@
-<div>
+<div class="home">
     <div class="home-cover">
         <div class="home-overlay">
             <div class="home-content">
@@ -8,8 +8,32 @@
         </div>
     </div>
     <div class="home-links">
-        <app-linkbox [imgUrl]="adultProgramImg"></app-linkbox>
-        <app-linkbox [imgUrl]="childProgramImg"></app-linkbox>
-        <app-linkbox [imgUrl]="residences"></app-linkbox>
+        <app-linkbox [imgUrl]="adultLinkImg" [linkTitle]="adultLinkTitle"></app-linkbox>
+        <app-linkbox [imgUrl]="youthLinkImg"[linkTitle]="youthLinkTitle"></app-linkbox>
+        <app-linkbox [imgUrl]="residencesLinkImg" [linkTitle]="residencesLinkTitle"></app-linkbox>
     </div>  
+    <div>
+        <div class="mission">
+            <div class="mission-top">
+                <div class="mission-header"> 
+                    <h1>Inclusion. Self-Determination. Independence</h1>
+                </div>
+                <div class=mission-text>
+                    Every individual deserves all three. 
+                    Innovative Services, Inc. is committed to making a positive impact on the lives of individuals with intellectual and developmental disability as well as various other medical, mental, and behavioral health diagnoses. 
+                    We find the right residence that meets each individual’s needs in the community of their choice and then provide the support and security to help them maximize their potential.
+                </div>
+            </div>
+            <div class="mission-btm">
+                <div class="mission-header"> 
+                    <h1>The Way We Work</h1>
+                </div>
+                <div class=mission-text>
+                    The three c's affect every decision we make, 
+                    every service we offer, and every interaction we have with the individuals in our care, 
+                    their families, and within our team.
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

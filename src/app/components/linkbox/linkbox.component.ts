@@ -8,6 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class LinkboxComponent implements OnInit {
 
   @Input() imgUrl!: string;
+  @Input() linkTitle!: string;  
+ 
+
+  
 
   constructor() { }
 

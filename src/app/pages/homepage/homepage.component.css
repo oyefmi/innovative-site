@@ -5,13 +5,13 @@
 
 .home-cover {
     background: url(../../../assets/images/isi-coverimage.jpg);
-    height: 110vh; 
+    height: 100vh; 
     background-repeat: no-repeat;
     background-position: center -10vh;
-    background-size: 100vw 120vh; 
-        -webkit-background-size: 100vw 120vh; 
-        -moz-background-size: 100vw 120vh; 
-        -o-background-size: 100vw 120vh;
+    background-size: 100vw 110vh; 
+        -webkit-background-size: 100vw 110vh; 
+        -moz-background-size: 100vw 110vh; 
+        -o-background-size: 100vw 110vh;
 }
 
 .home-content {
@@ -21,14 +21,13 @@
     padding-top: 15%;
 }
 
-#homecover-text {
+ .header {
     /* background-color: rgba(89, 126, 248, .56); */
-    color: #ffffff;
+    color: #000000;
     font-size: 60px;
     font-weight: 200;
     text-transform: uppercase;
     text-shadow: #597ef8 5px 0 10px;
-    /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0); */
 }
 
 button.btn {
@@ -53,19 +52,36 @@ button.btn {
 }
 
 .mission {
-    height: 50vh;
+    background: radial-gradient(ellipse at center, #ffffff 0%, #597ef8 100%);
+    height: 67vh;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 57.5vh, 0% 100%);
+    z-index: 2;
+}
+
+.mission-outline {
+    margin-right: 10rem;
+    margin-left: 10rem;
+    border: 1px solid #fff;
 }
 
 .mission-top {
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: -1;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .mission-btm {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 10px;
+    padding-bottom: 50px;
 }

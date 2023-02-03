@@ -1,6 +1,10 @@
 .home {
+    height: auto;
     padding-left: 15px;
     padding-right: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-cover {
@@ -23,27 +27,33 @@
 
  .header {
     /* background-color: rgba(89, 126, 248, .56); */
-    color: #000000;
+    color: #FFFFFF;
     font-size: 60px;
     font-weight: 200;
     text-transform: uppercase;
     text-shadow: #597ef8 5px 0 10px;
+    padding-bottom: 12px;
 }
 
 button.btn {
     margin-top: 1rem;
     background-color: rgba(12, 52, 173, 0.7);
     color: #ffffff;
-    font-size: 21px;
-    padding: 18px 50px 14px;
-    border-radius: 24px;
+    font-size: 1.85vw;
+    padding: 20px 40px;
+    border-radius: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
-    text-align: center;
     text-transform: uppercase;
-    line-height: 100%;
-    letter-spacing: 2px;
-    z-index: 100;
+    line-height: 15px;
+}
+
+.btn:hover {
+    transform:translateY(-5px);
+}
+
+.btn:active {
+    transform: translateY(-1.5px);
 }
 
 .home-links {
@@ -53,35 +63,77 @@ button.btn {
 
 .mission {
     background: radial-gradient(ellipse at center, #ffffff 0%, #597ef8 100%);
-    height: 67vh;
-    justify-content: center;
-    align-items: center;
+    height: auto;
     position: relative;
     padding: 0;
+    padding-bottom: 6.2rem;
     margin: 0 auto;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 57.5vh, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 44vh, 0% 100%);
     z-index: 2;
 }
 
-.mission-outline {
-    margin-right: 10rem;
-    margin-left: 10rem;
-    border: 1px solid #fff;
+.outline {
+    margin-right: 8rem;
+    margin-left: 8rem;
+}
+
+.mission .outline {
+    border: 1.5px solid #fff;
 }
 
 .mission-top {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     z-index: -1;
-    padding: 30px;
+    padding: 25px 30px;
+    margin-top: -20px;
     box-sizing: border-box;
 }
 
 .mission-btm {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
+    padding: 1px 30px;
     padding-bottom: 50px;
+}
+
+.vacancies {
+    padding: 0;
+    padding-bottom: 6.2rem;
+    margin: 0 auto;
+}
+
+.vacancies .header {
+    color: #0c34adb3;
+    text-shadow: #597ef8 5px 0 5px;
+}
+
+.vacancies .outline {
+    margin-top: -.5rem;
+}
+
+.row {
+    justify-content: space-around;
+}
+
+.jobs {
+    background: radial-gradient(ellipse at center, #ffffff 0%, #597ef8 100%);
+    text-align: center;
+    padding-top: 7rem;
+    clip-path: polygon(0% 0%, 100% 8.5vh, 100% 100%, 0% 100%);
+    padding-bottom: 2rem;
+}
+
+.jobs .text {
+    text-align: left;
+    display: flex;
+}
+
+.jobs .text .right-block {
+    width: 48%;
+    margin: 1rem;
+}
+.jobs .text .left-block {
+    width: 48%;
+    margin: 1rem;
+}
+
+.jobs .text .left-block #featured {
+    font-weight: bold;
 }

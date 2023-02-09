@@ -38,12 +38,39 @@ img {
     display: inline-block;
 }
 
-.footer-left-toprow {
+.footer-left .footer-left-toprow {
     display: flex;
 }
 
-.footer .footer-left-toprow .footer-address {
-    margin-left: 7.5rem;
-    margin-top: 2.5rem;
-    font-size: 20px;
+.footer-left-toprow .footer-address {
+    margin: 2.5em 0 1.5em 3em;
+    font-size: 19px;
 }
+
+.footer-right-top {
+    margin-top: 2em;
+}
+
+.footer-right-block {
+    width: 75%
+}
+
+.footer-right .footer-right-programs {
+    display: grid;
+}
+
+.footer-link {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #0c34adb3;
+    font-size: 21px;
+}
+
+hr {
+    margin-top: -0.2em;
+}
+

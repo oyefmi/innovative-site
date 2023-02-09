@@ -37,3 +37,13 @@ img {
     width: 40%;
     display: inline-block;
 }
+
+.footer-left-toprow {
+    display: flex;
+}
+
+.footer .footer-left-toprow .footer-address {
+    margin-left: 7.5rem;
+    margin-top: 2.5rem;
+    font-size: 20px;
+}

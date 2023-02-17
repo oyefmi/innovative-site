@@ -8,9 +8,15 @@
         </div>
     </div>
     <div class="home-links">
-        <app-linkbox [imgUrl]="adultLinkImg" [linkTitle]="adultLinkTitle"></app-linkbox>
-        <app-linkbox [imgUrl]="youthLinkImg"[linkTitle]="youthLinkTitle"></app-linkbox>
-        <app-linkbox [imgUrl]="residencesLinkImg" [linkTitle]="residencesLinkTitle"></app-linkbox>
+        <a href="/" >
+            <app-linkbox [imgUrl]="adultLinkImg" [linkTitle]="adultLinkTitle"></app-linkbox>
+        </a>
+        <a href="/">
+            <app-linkbox [imgUrl]="youthLinkImg"[linkTitle]="youthLinkTitle"></app-linkbox>
+        </a>
+        <a href="/">
+            <app-linkbox [imgUrl]="residencesLinkImg" [linkTitle]="residencesLinkTitle"></app-linkbox>
+        </a>
     </div>  
     <div class="mission">
         <div class="outline">
@@ -48,16 +54,27 @@
             <div class="text">
                 <p>We currently have __ vacancies across all of our Adult and Youth units.</p>
                 <div class="row">
-                    <div class="col-1">
-                        <div class="adult-card">
-                            <h3 class="adult-card-heading">Adult</h3>
-                        </div>
+                    <div class="col-1 adult">
+                        <a href="">
+                            <div class="card">
+                                <h3 class="adult-card-heading">Adult</h3>
+                                <hr />
+                                <p class="card-text">5</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-2">
-                        <div class="youth car-card">
-                            <h3 class="youth-card-heading">Youth</h3>
-                        </div>
+                    <div class="col-2 youth">
+                        <a href="">
+                            <div class="card">
+                                <h3 class="youth-card-heading">Youth</h3>
+                                <hr />
+                                <p class="card-text">0</p>
+                            </div>
+                        </a>
                     </div>
+                </div>
+                <div class="vacancies-button">
+                    <button type="button" class="btn btn-lg ">Program Vacancies</button>
                 </div>
             </div>
         </div>
@@ -65,19 +82,24 @@
     <div class="jobs">
         <div class="outline">
             <div class="header">
-                <h1><strong>Make An Impact in Your Life and Theirs</strong></h1>
+                <h1><strong>Make An Impact In Your Life and Theirs</strong></h1>
             </div>
             <div class="text">
-                <div class="right-block">
+                <div class="left-block">
                     <p>
-                        Are you laser-focused but open-minded? 
-                        Do you want to make change happen instead of just wishing for it? 
+                        Are you laser-focused but open-minded? <br />
+                        Do you want to make change happen instead of just wishing for it? <br /> 
                         Can you accept any challenge knowing that it can deliver an even greater reward? <br />
                         You might be the just the person we’re looking for.
                     </p>
-                    <button type="button" class="btn btn-lg">Browse Our Job Openings</button>
+                    <div class="jobs-button">
+                        <button type="button" class="btn btn-lg ">Browse Our Job Openings</button>
+                    </div>
                 </div>
-                <div class="left-block">
+                <div class="right-block">
+                    <a href="/">
+                        <img src="../../../assets/images/hp-apply-img.jpeg" width="500px" height="315px" class="job-img"/>
+                    </a>
                     <h4>Featured Career:</h4>
                     <a href="www.google.com">
                         <h3 id="featured">Direct Support Professional</h3>

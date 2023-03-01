@@ -9,18 +9,18 @@ export class HomepageComponent implements OnInit {
 
   adultLinkImg: string;
   youthLinkImg: string;
-  residencesLinkImg: string;
+  cdsLinkImg: string;
   adultLinkTitle: string;
   youthLinkTitle: string;
-  residencesLinkTitle: string;
+  cdsLinkTitle: string;
 
   constructor() { 
     this.adultLinkImg = '../../../assets/images/adult-page-header.jpeg';
     this.youthLinkImg = '../../../assets/images/child_link_img.jpeg';
-    this.residencesLinkImg = '../../../assets/images/vacancy-1.jpeg';
+    this.cdsLinkImg = '../../../assets/images/accessability.jpeg';
     this.adultLinkTitle = "Adult Program";
     this.youthLinkTitle = "Youth Program";
-    this.residencesLinkTitle = "Residential Care Units";
+    this.cdsLinkTitle = "Community Development Services";
   }
 
   ngOnInit(): void {

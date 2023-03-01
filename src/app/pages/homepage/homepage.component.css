@@ -47,6 +47,7 @@ button.btn {
     text-decoration: none;
     text-transform: uppercase;
     line-height: 15px;
+    transition: transform .4s;
 }
 
 .btn:hover {
@@ -75,14 +76,22 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.link {
+    transition: transform .6s;
+}
+
+.link:hover {
+    transform: scale(1.07);
+}
+
 .mission {
     background: radial-gradient(ellipse at center, #ffffff 0%, #597ef8 100%);
-    height: 575px;
+    height: 590px;
     position: relative;
     padding: 0;
-    padding-bottom: 6.2rem;
+    padding-bottom: 6.5rem;
     margin: 0 auto;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
     z-index: 2;
 }
 
@@ -142,7 +151,7 @@ a {
 .jobs {
     background: radial-gradient(ellipse at center, #ffffff 0%, #597ef8 100%);
     text-align: center;
-    clip-path: polygon(0% 0%, 100% 18%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 12%, 100% 100%, 0% 100%);
 }
 
 .jobs .outline {

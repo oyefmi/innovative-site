@@ -3,19 +3,27 @@
         <div class="home-overlay">
             <div class="home-content">
                 <h1 class="header">We Encourage & Empower Individuals</h1>
-                <button type="button" class="btn btn-lg">See How We Do It</button>
+                <a href="/about-us">
+                    <button type="button" class="btn btn-lg">See How We Do It</button>
+                </a>
             </div>
         </div>
     </div>
     <div class="home-links">
-        <a href="/" >
-            <app-linkbox [imgUrl]="adultLinkImg" [linkTitle]="adultLinkTitle"></app-linkbox>
+        <a href="/">
+            <div class="link">
+                <app-linkbox [imgUrl]="adultLinkImg" [linkTitle]="adultLinkTitle"></app-linkbox>
+            </div>
         </a>
         <a href="/">
-            <app-linkbox [imgUrl]="youthLinkImg"[linkTitle]="youthLinkTitle"></app-linkbox>
+            <div class="link">
+                <app-linkbox [imgUrl]="youthLinkImg"[linkTitle]="youthLinkTitle"></app-linkbox>
+            </div>
         </a>
         <a href="/">
-            <app-linkbox [imgUrl]="residencesLinkImg" [linkTitle]="residencesLinkTitle"></app-linkbox>
+            <div class="link">
+                <app-linkbox [imgUrl]="cdsLinkImg" [linkTitle]="cdsLinkTitle"></app-linkbox>
+            </div>
         </a>
     </div>  
     <div class="mission">

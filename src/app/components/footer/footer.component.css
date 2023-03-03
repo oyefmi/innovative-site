@@ -26,16 +26,21 @@ footer .footer-bottom {
 }
 
 img {
-    height: auto;
+    /* height: auto; */
     border: 0;
     mix-blend-mode: multiply;
 }
 
+.footer-left a {
+    width: 50%;
+    margin: 1em;
+}
+
 .footer-left img {
-    margin: 0;
     float: left;
-    width: 40%;
-    display: inline-block;
+    width: 90%;
+    height: 100%;
+
 }
 
 .footer-left .footer-left-toprow {
@@ -43,8 +48,9 @@ img {
 }
 
 .footer-left-toprow .footer-address {
-    margin: 2.5em 0 1.5em 3em;
-    font-size: 19px;
+    margin: 3em 1em 0 1.6em; 
+    padding-top: 1em;
+    font-size: 20px;
 }
 
 .footer-right-top {

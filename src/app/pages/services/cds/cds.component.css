@@ -1,0 +1,48 @@
+.cds-page {
+    margin: 0 0.66em;
+    line-height: .9;
+    font-size: 24px;
+}
+
+.page-header {
+    padding: 10px 15px;
+    height: 80vh;
+    background: 
+        radial-gradient(ellipse at center, 
+        rgba(255, 255, 255, 0.2) 0%, 
+        rgba(89, 126, 248, 0.8) 100%), 
+        url(../../../../assets/images/182616459_l.jpeg);
+    background-repeat: no-repeat;
+    background-position: center -10vh;
+    background-size: 100vw 120vh; 
+        -webkit-background-size: 100vw 110vh; 
+        -moz-background-size: 100vw 110vh; 
+        -o-background-size: 100vw 110vh;
+}
+
+.header-box {
+    margin: 12% 5em;
+    padding: 1.5em 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(89, 126, 248, 0.8);
+}
+
+.header-text {
+    margin: 1em 1em;
+    border: 1.5px solid #fff;
+}
+
+.header-text h1 {
+    font-size: 46px;
+    margin: .3em 0 ;
+}
+
+.header-text p {
+    margin: 0 .7em 1em .7em;
+}
+
+.header-text {
+    margin: 1em 1em;
+    border: 1.5px solid #fff;
+}

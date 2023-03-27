@@ -21,8 +21,8 @@
 }
 
 .header-box {
-    margin: 10% 5em;
-    padding: 1em 0;
+    margin: 12% 5em;
+    padding: 1.5em 0;
     text-align: center;
     color: #ffffff;
     background-color: rgba(89, 126, 248, 0.8);
@@ -33,9 +33,18 @@
     border: 1.5px solid #fff;
 }
 
+.header-text h1 {
+    font-size: 46px;
+    margin: .3em 0 ;
+}
+
+.header-text p {
+    margin: 0 .7em 1em .7em;
+}
+
 .about-main {
     height: auto;
-    margin: 1.8em 3em;
+    margin: 2em 10em;
     font-size: 21px;
     line-height: 1.1;
     padding-bottom: 1em;

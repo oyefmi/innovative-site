@@ -7,14 +7,19 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { LinkboxComponent } from './components/linkbox/linkbox.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DownArrowComponent } from './components/downarrow/downarrow.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    DownArrowComponent,  
     NavbarComponent,
     HomepageComponent,
+    AboutComponent,
     LinkboxComponent,
     FooterComponent
+    
   ],
   imports: [
     BrowserModule,

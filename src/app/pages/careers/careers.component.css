@@ -100,14 +100,19 @@ button.btn {
     margin-bottom: 2em;
 }
 
+.positions {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .post-card {
     background: rgb(89, 126, 248);
-    padding: 24px;
+    padding: 20px;
     box-sizing: border-box;
-    margin: 0 0 30px 4.4%;
-    width: 28%;
-    align-items: center;
-    /* float: left; */
+    margin: 0 0 30px 30px;
+    width: 37%;
+    text-align: center;
 }
 
 .post-card h3 {
@@ -121,7 +126,6 @@ button.btn {
     color: #fff;
     font-family: "Zilla Slab",serif;
     font-size: 15px;
-    margin: 0 0 22px;
     opacity: .7;
     line-height: 1.4;
 }

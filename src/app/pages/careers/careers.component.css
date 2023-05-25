@@ -85,6 +85,12 @@ button.btn {
 
 .btn:active {
     transform: translateY(-1.5px);
+    color: #ffffff;
+}
+
+button.job-btn {
+    background-color: #ffffff;
+    color:rgb(89, 126, 248);
 }
 
 .main {
@@ -125,7 +131,25 @@ button.btn {
 .post-card p {
     color: #fff;
     font-family: "Zilla Slab",serif;
-    font-size: 15px;
+    font-size: 17.5px;
     opacity: .7;
     line-height: 1.4;
+}
+
+.modal-body .heading {
+    color: rgb(89, 126, 248);;
+    font-size: 25px;
+    padding-bottom: 1em;
+}
+.modal-body .desc-text {
+    font-size: 18px;
+    text-align: left;
+}
+
+.modal-body .summary {
+    text-align: center;
+}
+
+.eeo-statement {
+    margin-top: 4em;
 }

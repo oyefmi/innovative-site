@@ -4,26 +4,24 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomepageComponent } from './pages/homepage/homepage.component';
-import { LinkboxComponent } from './components/linkbox/linkbox.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { DownArrowComponent } from './components/downarrow/downarrow.component';
-import { AboutComponent } from './pages/about/about.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { LinkboxComponent } from './pages/homepage/linkbox/linkbox.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DownArrowComponent,  
+    AppComponent,  
     NavbarComponent,
+    FooterComponent,
     HomepageComponent,
-    AboutComponent,
-    LinkboxComponent,
-    FooterComponent
+    LinkboxComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

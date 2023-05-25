@@ -1,24 +1,44 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './pages/about/about.component';
-import { CareersComponent } from './pages/careers/careers.component';
-import { ContactComponent } from './pages/contact/contact.component';
+import { AdultProgramModule } from './pages/adult-program/adult-program.module';
+
 import { HomepageComponent } from './pages/homepage/homepage.component';
-import { AdultProgramComponent } from './pages/services/adult-program/adult-program.component';
-import { CDSComponent } from './pages/services/cds/cds.component';
-import { YouthProgramComponent } from './pages/services/youth-program/youth-program.component';
 import { VacanciesComponent } from './pages/vacancies/vacancies.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: '', component: HomepageComponent },
-  { path: 'about-us', component: AboutComponent },
-  { path: 'unit-vacancies', component: VacanciesComponent },
-  { path: 'careers', component: CareersComponent },
-  { path: 'contact-us', component: ContactComponent },
-  { path: 'adult-program', component: AdultProgramComponent },
-  { path: 'youth-program', component: YouthProgramComponent },
-  { path: 'community-development-services', component: CDSComponent },
+  { 
+    path: '', 
+    component: HomepageComponent, 
+    pathMatch: 'full' 
+  },
+  { 
+    path: 'about-us',
+    loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)
+  },
+  { 
+    path: 'unit-vacancies', 
+    // loadChildren: () => import('./pages/vacancies/vacancies.module').then(m => m.VacanciesModule)
+    component: VacanciesComponent
+  },
+  { 
+    path: 'careers', 
+    loadChildren: () => import('./pages/careers/careers.module').then(m => m.CareersModule)
+  },
+  { 
+    path: 'adult-program', component: AdultProgramModule
+  },
+  { 
+    path: 'youth-program', 
+    loadChildren: () => import('./pages/youth-program/youth-program.module').then(m => m.YouthProgramModule) 
+  },
+  { path: 'community-development-services', 
+    loadChildren: () => import('./pages/cds/cds.module').then(m => m.CDSModule) 
+  },
+  { 
+    path: 'contact-us', 
+    loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule) 
+  }, 
+  
 ]
 
 @NgModule({

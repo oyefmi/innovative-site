@@ -4,11 +4,11 @@ import { RouterModule, Routes } from "@angular/router";
 import { VacanciesComponent } from "./vacancies.component";
 
 const routes: Routes = [
-    { path: 'unit-vacancies', component: VacanciesComponent }
+    { path: '', component: VacanciesComponent }
 ]
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forChild(routes)],
     exports: [RouterModule],
     providers: []
 })

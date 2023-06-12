@@ -4,7 +4,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { CDSComponent } from "./cds.component";
 
 const routes: Routes = [
-    { path: 'cds', component: CDSComponent }
+    { path: '', component: CDSComponent }
 ];
 
 @NgModule({

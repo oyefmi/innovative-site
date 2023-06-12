@@ -4,11 +4,11 @@ import { RouterModule, Routes } from "@angular/router";
 import { YouthProgramComponent } from "./youth-program.component";
 
 const routes: Routes = [
-    { path: 'youth-program', component: YouthProgramComponent}
+    { path: '', component: YouthProgramComponent}
 ];
 
 @NgModule ({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forChild(routes)],
     exports: [RouterModule],
     providers: []
 })

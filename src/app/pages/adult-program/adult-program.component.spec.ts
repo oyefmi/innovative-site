@@ -6,14 +6,10 @@ describe('AdultProgramComponent', () => {
   let component: AdultProgramComponent;
   let fixture: ComponentFixture<AdultProgramComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ AdultProgramComponent ]
-    })
-    .compileComponents();
-  });
-
   beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [AdultProgramComponent]
+    });
     fixture = TestBed.createComponent(AdultProgramComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

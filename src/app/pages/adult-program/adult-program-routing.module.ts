@@ -4,11 +4,11 @@ import { RouterModule, Routes } from "@angular/router";
 import { AdultProgramComponent } from "./adult-program.component";
 
 const routes: Routes = [
-    { path: 'adult-program', component: AdultProgramComponent }
-]
+    { path: '', component: AdultProgramComponent }
+];
 
-@NgModule ({
-    imports: [[RouterModule.forRoot(routes)]],
+@NgModule({
+    imports: [RouterModule.forChild(routes)],
     exports: [RouterModule],
     providers: []
 })

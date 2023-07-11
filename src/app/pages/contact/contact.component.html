@@ -1,1 +1,35 @@
-<p>contact works!</p>
+<div class="contact">
+    <div class="contact-map">
+        <google-map></google-map>
+    </div>
+    <div class="contact-main">
+        <h2>Get in Touch with us</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div>
+                <label for="name">
+                  Name: 
+                </label>
+                <input id="name" type="text" formControlName="name">
+              </div>
+              <div>
+                <label for="email">
+                  Email: 
+                </label>
+                <input id="email" type="text" formControlName="email">
+              </div>
+              <div>
+                <label for="phoneNumber">
+                  Phone Number: 
+                </label>
+                <input id="phoneNumber" type="text" formControlName="phoneNumber">
+              </div>
+              <div>
+                <label for="message">
+                  Message: 
+                </label>
+                <input id="message" type="text" formControlName="message">
+              </div>
+            <button class="btn btn-sm" type="submit">Submit</button>
+        </form>
+    </div>
+</div>   

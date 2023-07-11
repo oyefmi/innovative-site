@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { LinkboxComponent } from './pages/homepage/linkbox/linkbox.component';
 import { NavbarComponent } from './navbar/navbar.component';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -15,7 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NavbarComponent,
     FooterComponent,
     HomepageComponent,
-    LinkboxComponent,
+    LinkboxComponent
   ],
   imports: [
     BrowserModule,

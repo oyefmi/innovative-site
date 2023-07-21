@@ -8,6 +8,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
+center: google.maps.LatLngLiteral = {lat: 39.425062598243564, lng: -76.81118242257342}
+
   contactForm = this.builder.group({
     name: '',
     email: '',

@@ -1,7 +1,12 @@
 .contact {
-    margin: 0 0.66em;
+    margin: 0 0.75em;
     line-height: .9;
     font-size: 24px;
+    text-align: center;
+}
+
+.contact-main {
+    padding: 1em 3em;
 }
 
 button.btn {

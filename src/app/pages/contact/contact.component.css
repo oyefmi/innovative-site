@@ -1,12 +1,28 @@
 .contact {
     margin: 0 0.75em;
-    line-height: .9;
     font-size: 24px;
     text-align: center;
 }
 
 .contact-main {
-    padding: 1em 3em;
+    padding: 1.5rem;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+}
+
+.contact-text {
+    margin-left: 45rem;
+    margin-right: 45rem;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.form-fields {
+    display: grid;
+    text-align: left;
+    margin: 2rem 45rem;
 }
 
 button.btn {
@@ -29,4 +45,19 @@ button.btn {
 
 .btn:active {
     transform: translateY(-1.5px);
+}
+
+@media (max-width: 1000px) {
+    .contact-text {
+        margin-left: 15rem;
+        margin-right: 15rem; 
+        font-size: 17px;
+        line-height: 1.2;
+    }
+    
+    .form-fields {
+        display: grid;
+        justify-content: center;
+        text-align: left;
+    }
 }

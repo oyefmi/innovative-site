@@ -7,33 +7,35 @@
         </google-map>
     </div>
     <div class="contact-main">
-        <h2>Get in Touch with us</h2>
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <div>
-                <label for="name">
-                  Name: 
-                </label>
-                <input id="name" type="text" formControlName="name">
-              </div>
-              <div>
+        <h2 class="contact-title">Get in Touch With Us</h2>
+        <p class="contact-text">
+            If you have any questions or would like to learn more about our services or career opportunities, 
+            please fill out the form below and we’ll be in touch with you.
+        </p>
+        <form (submit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate> 
+            <div class="form-fields"> 
+                <label for="name">Name: </label>
+                <input id="name" type="text" name="name" ngModel required maxlength="40">
+            </div>
+            <div class="form-fields">
                 <label for="email">
-                  Email: 
+                    Email: 
                 </label>
-                <input id="email" type="text" formControlName="email">
-              </div>
-              <div>
+                <input id="email" type="text" name="email" ngModel required email>
+            </div>
+            <div class="form-fields">
                 <label for="phoneNumber">
-                  Phone Number: 
+                    Phone Number: 
                 </label>
-                <input id="phoneNumber" type="text" formControlName="phoneNumber">
-              </div>
-              <div>
+                <input id="phoneNumber" type="text" name="phoneNumber" ngModel required minlength="10" maxlength="14">
+            </div>
+            <div class="form-fields">
                 <label for="message">
-                  Message: 
+                    Message: 
                 </label>
-                <input id="message" type="text" formControlName="message">
-              </div>
-            <button class="btn btn-sm" type="submit">Submit</button>
+                <textarea id="message" rows="10" name="message" ngModel></textarea>
+            </div>
         </form>
+        <button class="btn btn-sm" type="submit" value="submit" >Submit</button>
     </div>
 </div>   

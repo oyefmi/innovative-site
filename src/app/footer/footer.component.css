@@ -40,7 +40,6 @@ img {
     float: left;
     width: 90%;
     height: 100%;
-
 }
 
 .footer-left .footer-left-toprow {
@@ -113,3 +112,14 @@ button.btn:active {
     text-align: center;
 }
 
+@media (max-width: 1230px) {
+    .row {
+        display: block;
+    }
+
+    .footer-left img {
+        float: left;
+        width: 30vw;
+        height: 100%;
+    }
+}

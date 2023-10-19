@@ -3,7 +3,8 @@
         <google-map 
             height="600"
             width="100%"
-            [center]="center">
+            [options]="mapOptions">
+                <map-marker [position]="marker.position"></map-marker>
         </google-map>
     </div>
     <div class="contact-main">
@@ -12,30 +13,32 @@
             If you have any questions or would like to learn more about our services or career opportunities, 
             please fill out the form below and we’ll be in touch with you.
         </p>
-        <form (submit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate> 
-            <div class="form-fields"> 
-                <label for="name">Name: </label>
-                <input id="name" type="text" name="name" ngModel required maxlength="40">
-            </div>
+        <form (submit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
             <div class="form-fields">
-                <label for="email">
-                    Email: 
-                </label>
-                <input id="email" type="text" name="email" ngModel required email>
-            </div>
-            <div class="form-fields">
-                <label for="phoneNumber">
-                    Phone Number: 
-                </label>
-                <input id="phoneNumber" type="text" name="phoneNumber" ngModel required minlength="10" maxlength="14">
-            </div>
-            <div class="form-fields">
-                <label for="message">
-                    Message: 
-                </label>
-                <textarea id="message" rows="10" name="message" ngModel></textarea>
-            </div>
+                <div class="form-row"> 
+                    <label for="name">Name: </label><br />
+                    <input id="name" type="text" name="name" ngModel required maxlength="40">
+                </div>
+                <div class="form-row">
+                    <label for="email">
+                        Email: 
+                    </label><br />
+                    <input id="email" type="text" name="email" ngModel required email>
+                </div>
+                <div class="form-row">
+                    <label for="phoneNumber">
+                        Phone Number: 
+                    </label><br />
+                    <input id="phoneNumber" type="text" name="phoneNumber" ngModel required minlength="10" maxlength="14">
+                </div>
+                <div class="form-row">
+                    <label for="message">
+                        Message: 
+                    </label><br />
+                    <textarea id="message" rows="10" name="message" ngModel></textarea>
+                </div>
+            </div> 
+            <button class="btn" type="submit">Submit</button>
         </form>
-        <button class="btn btn-sm" type="submit" value="submit" >Submit</button>
     </div>
 </div>   

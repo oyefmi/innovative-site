@@ -9,7 +9,15 @@ import { ContactEmailService } from './contact-email.service';
 })
 export class ContactComponent {
 
-center: google.maps.LatLngLiteral = {lat: 39.425062598243564, lng: -76.81118242257342}
+mapOptions: google.maps.MapOptions = {
+  center: {lat: 39.42481, lng: -76.81129},
+  zoom: 16.9
+}
+
+marker = {
+  position: {lat: 39.42472, lng: -76.81131}
+}
+
   
   
   constructor(private emailService: ContactEmailService) {  }

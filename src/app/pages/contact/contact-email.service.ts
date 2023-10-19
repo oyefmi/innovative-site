@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactEmailService {
 
-  private emailUrl = 'http://localhost:4200/';
+  private emailUrl = 'http://localhost:3000/api/send-email';
 
   constructor(private http: HttpClient) { }
 

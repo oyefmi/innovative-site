@@ -10,24 +10,23 @@
 
 .home-cover {
     background: url(../../../assets/images/isi-coverimage.jpg);
-    height: 100vh; 
+    height: 105.6vh; 
     background-repeat: no-repeat;
-    background-position: center -10vh;
-    background-size: 100vw 110vh; 
-        -webkit-background-size: 100vw 110vh; 
-        -moz-background-size: 100vw 110vh; 
-        -o-background-size: 100vw 110vh;
+    background-position: center 0vh;
+    background-size: 100vw 105vh; 
+        -webkit-background-size: 100vw 105vh; 
+        -moz-background-size: 100vw 105vh; 
+        -o-background-size: 100vw 105vh;
 }
 
 .home-content {
     width: 30%;
     margin: 1em;
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
     padding-top: 15%;
 }
 
  .header {
-    /* background-color: rgba(89, 126, 248, .56); */
     color: #FFFFFF;
     font-size: 60px;
     font-weight: 200;
@@ -184,4 +183,81 @@ a {
 
 .job-img:active {
     transform:translateY(4px);
+}
+
+@media (max-width: 1500px) { 
+    .home-content {
+        width: 38%
+    }
+
+    .home-cover {
+        background: url(../../../assets/images/isi-coverimage.jpg);
+        height: 85.6vh; 
+        background-repeat: no-repeat;
+        background-size: 100vw 85vh; 
+            -webkit-background-size: 100vw 85vh; 
+            -moz-background-size: 100vw 85vh; 
+            -o-background-size: 100vw 85vh;
+    }
+
+    .header {
+        color: #FFFFFF;
+        font-size: 4vw;
+        font-weight: 200;
+        text-transform: uppercase;
+        text-shadow: #597ef8 5px 0 10px;
+        padding-top: 35px;
+        padding-bottom: 12px;
+    }
+    
+    button.btn {
+        font-size: 1.6vw;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 925px) {
+    .home {
+        height: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+    }
+
+    .home-cover {
+        background: url(../../../assets/images/isi-coverimage.jpg);
+        height: 75.6vh; 
+        background-repeat: no-repeat;
+        background-position: center 0vh;
+        background-size: 100vw 80vh; 
+            -webkit-background-size: 100vw 75vh; 
+            -moz-background-size: 100vw 80vh; 
+            -o-background-size: 100vw 80vh;
+    }
+
+    .home-content {
+        width: 25%
+    }
+
+    .header {
+        color: #FFFFFF;
+        font-size: 5vw;
+        font-weight: 200;
+        text-transform: uppercase;
+        text-shadow: #597ef8 5px 0 10px;
+        padding-top: 75px;
+        padding-bottom: 12px;
+    }
+
+    button.btn {
+        font-size: 2.2vw;
+        padding: 20px 15px;
+    }
+    
+    .home-links {
+        display: block;
+    }
 }

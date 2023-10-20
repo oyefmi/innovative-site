@@ -20,9 +20,14 @@
 }
 
 .form-fields {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.form-row {
     display: grid;
-    justify-content: center;
-    text-align: left;
+    min-width: 90%;
+    font-size: 23px;
 }
 
 label {
@@ -52,23 +57,51 @@ button.btn {
 }
 
 @media (max-width: 1650px) {
+    .contact-title {
+        font-size: 36px;
+    }
+
     .contact-text {
         margin-left: 15rem;
-        margin-right: 15rem; 
+        margin-right: 15rem;
+        font-size: 20px; 
+    }
+
+    .form-row {
+        font-size: 20px;
     }
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1240px) {
+    .contact-title {
+        font-size: 34px;
+    }
     .contact-text {
         margin-left: 10rem;
-        margin-right: 10rem; 
+        margin-right: 10rem;
     }
+    
 }
 
 @media (max-width: 900px) {
     .contact-text {
-        margin-left: 3em;
-        margin-right: 3rem;
-        font-size: 3vw; 
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 18px; 
+    }
+
+    .form-fields {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .form-row {
+        font-size: 18px;
+    }
+
+    button.btn {
+        font-size: 14px;
+        padding: 8px 11px;
     }
 }
+

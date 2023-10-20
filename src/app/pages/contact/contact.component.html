@@ -16,25 +16,25 @@
         <form (submit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
             <div class="form-fields">
                 <div class="form-row"> 
-                    <label for="name">Name: </label><br />
+                    <label for="name">Name: </label>
                     <input id="name" type="text" name="name" ngModel required maxlength="40">
                 </div>
                 <div class="form-row">
                     <label for="email">
                         Email: 
-                    </label><br />
+                    </label>
                     <input id="email" type="text" name="email" ngModel required email>
                 </div>
                 <div class="form-row">
                     <label for="phoneNumber">
                         Phone Number: 
-                    </label><br />
+                    </label>
                     <input id="phoneNumber" type="text" name="phoneNumber" ngModel required minlength="10" maxlength="14">
                 </div>
                 <div class="form-row">
                     <label for="message">
                         Message: 
-                    </label><br />
+                    </label>
                     <textarea id="message" rows="10" name="message" ngModel></textarea>
                 </div>
             </div> 

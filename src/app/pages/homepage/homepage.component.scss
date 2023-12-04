@@ -134,10 +134,15 @@ a {
     margin-left: .5em;
 }
 
-.card {
+.vacancies .card-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vacancies .card {
     height: 425px;
     width: 350px;
-    margin: 2em -3em;
+    margin: 2em;
     padding: 2em 1em;
     box-shadow: 12px 15px 20px rgb(0 0 0 / 15%);
     border-radius: 3px;
@@ -204,16 +209,6 @@ a {
             -moz-background-size: 100vw 85vh; 
             -o-background-size: 100vw 85vh;
     }
-
-    .header {
-        color: $color-white;
-        font-size: 4vw;
-        font-weight: 200;
-        text-transform: uppercase;
-        text-shadow: $color-primary 5px 0 10px;
-        padding-top: 35px;
-        padding-bottom: 12px;
-    }
     
     button.btn {
         font-size: 1.6vw;
@@ -247,16 +242,6 @@ a {
         width: 25%
     }
 
-    .header {
-        color: $color-white;
-        font-size: 5vw;
-        font-weight: 200;
-        text-transform: uppercase;
-        text-shadow: $color-primary 5px 0 10px;
-        padding-top: 75px;
-        padding-bottom: 12px;
-    }
-
     button.btn {
         font-size: 2.2vw;
         padding: 20px 15px;
@@ -264,5 +249,35 @@ a {
     
     .home-links {
         display: block;
+    }
+
+    .vacancies .outline {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .vacancies .card-row {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 650px) {
+    
+    .mission {
+        padding-bottom: 6.5rem;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+    }
+    
+    .vacancies {
+        margin-top: -0.5em;
+    }
+
+    .jobs {
+        clip-path: polygon(0% 0%, 100% 8%, 100% 100%, 0% 100%);
+    }
+
+    .jobs .outline {
+        padding-top: 3.2em;
     }
 }

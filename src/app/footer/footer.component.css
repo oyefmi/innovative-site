@@ -32,14 +32,13 @@ img {
 }
 
 .footer-left a {
-    width: 50%;
-    margin: 1em;
+    width: 45%;
+    margin: 2.5em .8em;
 }
 
 .footer-left img {
     float: left;
-    width: 90%;
-    height: 100%;
+    width: 100%;
 }
 
 .footer-left .footer-left-toprow {
@@ -47,9 +46,17 @@ img {
 }
 
 .footer-left-toprow .footer-address {
-    margin: 3em 1em 0 1.6em; 
+    margin-top: 2em;
+    margin-left: 2.2em; 
     padding-top: 1em;
-    font-size: 20px;
+    font-size: 19px;
+}
+
+.footer-left-bottomrow .footer-contactInfo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5em;
+    font-size: 15px;
 }
 
 .footer-right-top {
@@ -112,14 +119,74 @@ button.btn:active {
     text-align: center;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1125px) {
     .row {
         display: block;
     }
 
+    .footer-left {
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
     .footer-left img {
         float: left;
-        width: 30vw;
-        height: 100%;
+        width: 80%;
+    }
+
+    .footer-left-toprow .footer-address {
+        justify-content: flex-end;
+        width: 40%;
+        /* margin: 3em; */
+        font-size: 22px;
+    }
+
+    .footer-left-bottomrow {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .footer-left-bottomrow .footer-contactInfo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-right-top {
+        display: flex;
+    }
+
+    .footer-right-bottom {
+        display: flex;
+    }
+}
+
+@media (max-width: 775px) {
+    .footer-left-toprow .footer-address {
+        font-size: 18px;
+    }
+
+    .footer-left-bottomrow .footer-contactInfo {
+        font-size: 15px;
+    }
+
+    .footer-right-block {
+        width: auto;
+        margin-top: 1.8em;
+    }
+
+    .footer-right-top {
+        flex-direction: column;
+    }
+
+    .footer-right-bottom {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 580px) {
+    .footer-left-toprow .footer-address {
+        font-size: 15px;
     }
 }

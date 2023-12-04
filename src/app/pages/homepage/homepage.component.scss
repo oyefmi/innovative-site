@@ -14,24 +14,6 @@ $color-white: #FFFFFF;
     font-size: 19px;
 }
 
-.home-cover {
-    background: url(../../../assets/images/isi-coverimage.jpg);
-    height: 105.6vh; 
-    background-repeat: no-repeat;
-    background-position: center 0vh;
-    background-size: 100vw 105vh; 
-        -webkit-background-size: 100vw 105vh; 
-        -moz-background-size: 100vw 105vh; 
-        -o-background-size: 100vw 105vh;
-}
-
-.home-content {
-    width: 30%;
-    margin: 1em;
-    margin-left: 2.5rem;
-    padding-top: 15%;
-}
-
  .header {
     color: $color-white;
     font-size: 60px;
@@ -75,6 +57,31 @@ hr {
 a {
     text-decoration: none;
     text-transform: uppercase;  
+}
+
+.home-cover {
+    background: url(../../../assets/images/isi-coverimage.jpg);
+    height: 105.25vh; 
+    background-repeat: no-repeat;
+    background-position: center 0vh;
+    background-size: 105vw 105vh; 
+        -webkit-background-size: 105vw 105vh; 
+        -moz-background-size: 105vw 105vh; 
+        -o-background-size: 105vw 105vh;
+}
+
+.home-content {
+    width: 30%;
+    margin: 1em;
+    margin-left: 2.5rem;
+    padding-top: 15%;
+}
+
+.home .btn {
+    font-size: 26px;
+    line-height: 1.3em;
+    padding: 14px 32px;
+    font-weight: bold;
 }
 
 .home-links {
@@ -174,7 +181,7 @@ a {
 .jobs .text .left-block {
     width: 49%;
     margin: 2em 1em;
-    margin-right: -2em;
+    // margin-right: -2em;
     padding-top: 2em;
 }
 
@@ -188,6 +195,8 @@ a {
 }
 
 .jobs .right-block .job-img {
+    width: 31vw;
+    height: 39vh;
     box-shadow: 15px 15px 11px rgb(0 0 0 / 15%);
 }
 
@@ -196,6 +205,15 @@ a {
 }
 
 @media (max-width: 1200px) { 
+    .outline {
+        margin: 0 4em;
+    }
+    
+    .btn {
+        font-size: 1.6vw;
+        padding: 15px 20px;
+    }
+
     .home-content {
         width: 38%
     }
@@ -209,10 +227,18 @@ a {
             -moz-background-size: 100vw 85vh; 
             -o-background-size: 100vw 85vh;
     }
-    
-    button.btn {
-        font-size: 1.6vw;
-        padding: 15px 20px;
+
+    .home .header {
+        font-size: 5vw;
+    }
+
+    .home .btn {
+        font-size: 2.4vw;
+    }
+
+    .jobs .right-block .job-img {
+        width: 40vw;
+        height: 35vh;
     }
 }
 
@@ -242,6 +268,10 @@ a {
         width: 25%
     }
 
+    .home .btn {
+        padding: 14px 24px;
+    }
+
     button.btn {
         font-size: 2.2vw;
         padding: 20px 15px;
@@ -260,24 +290,69 @@ a {
         display: grid;
         justify-content: center;
     }
+
+    .jobs .outline {
+        padding-top: 9.5em;
+    }
+
+    .jobs .text {
+        display: grid;
+        justify-items: center;
+    }
+
+    .jobs .right-block .job-img {
+        width: 48vw;
+        height: 41vh;
+        margin-bottom: 1em;
+        margin-left: -2em;
+    }
+
+
 }
 
 @media (max-width: 650px) {
+
+    .btn {
+        font-size: 14px;
+        padding: 18px 13px;
+    }
+
+    .home .header {
+        font-size: 24px;
+        margin-top: 8em;
+    }
+
+    .home .btn {
+        font-size: 2.4vw;
+        line-height: 1.3em;
+        padding: 8px 14px;
+    }
     
     .mission {
         padding-bottom: 6.5rem;
         clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
     }
+
+    .mission .outline {
+        margin: auto 2em;
+    }
     
     .vacancies {
-        margin-top: -0.5em;
+        margin-top: 1.5em;
     }
 
     .jobs {
         clip-path: polygon(0% 0%, 100% 8%, 100% 100%, 0% 100%);
     }
 
+    .jobs .right-block .job-img {
+        width: 45vw;
+        height: 38vh;
+        margin-bottom: 1em;
+        margin-left: auto;
+    }
+
     .jobs .outline {
-        padding-top: 3.2em;
+        margin: 0 0.5em;
     }
 }

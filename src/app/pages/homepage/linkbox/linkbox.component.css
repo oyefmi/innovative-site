@@ -27,15 +27,21 @@
   }
 }
 
-@media (max-width: 925px) {
+@media (max-width: 900px) {
   .linkbox {
-    background-size: 100vw 40vh; 
-        -webkit-background-size: 110vw 30vh; 
-        -moz-background-size: 110vw 30vh; 
-        -o-background-size: 110vw 30vh;
+    background-size: 100vw 32vh; 
+        -webkit-background-size: 100vw 32vh; 
+        -moz-background-size: 100vw 32vh; 
+        -o-background-size: 100vw 32vh;
   }
 
   .title {
     font-size: 3vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 24px;
   }
 }

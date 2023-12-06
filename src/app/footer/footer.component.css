@@ -133,7 +133,7 @@ button.btn:active {
 
     .footer-left img {
         float: left;
-        width: 80%;
+        width: 90%;
     }
 
     .footer-left-toprow .footer-address {
@@ -187,6 +187,7 @@ button.btn:active {
 
 @media (max-width: 580px) {
     .footer-left-toprow .footer-address {
-        font-size: 15px;
+        font-size: 3vw;
+        margin-bottom: 1.5em;
     }
 }

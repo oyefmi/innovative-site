@@ -21,7 +21,7 @@
 }
 
 .header-box {
-    margin: 8em 5em;
+    margin: 6em 5em;
     padding: 1.5em 0;
     text-align: center;
     color: #ffffff;
@@ -112,7 +112,7 @@ button.btn {
 
 @media(max-width: 1100px) {
     .header-box {
-        margin: 7em 2em;
+        margin: 5.6em 2em;
         padding: 1.5em 0;
     }
 }
@@ -120,34 +120,56 @@ button.btn {
 @media(max-width: 950px) {
     .header-box {
         padding: 1em 0;
-        margin-top: 6.5em;
+        margin-top: 5.7em;
         margin-left: 1em;
         margin-right: 1em;
     }
 
     .header-text h1 {
-        font-size: 5vw; ;
+        font-size: 39px; ;
     }
     
     .header-text p {
-        font-size: 2.7vw;
+        font-size: 21px;
+    }
+
+    .about-main {
+        display: grid;
+    }
+
+    .about-sidebar {
+        display: flex;
+        justify-content: center space-between;
+        width: 100%;
+        margin: 2em .5em;
+        text-align: center;
+    }
+
+    .about-sidebar .sidebar-content-top {
+        width: 50%;
+        margin: 0 1.5em 0 0;
+    }
+
+    .about-sidebar .sidebar-content-btm {
+        width: 50%;
+        margin: 0 0 0 1.5em;
     }
 }
 
 @media(max-width: 575px) {
     .about-header {
         padding: 10px 7px;
-        height: 60vh;
+        height: 75vh;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100vw 70vh; 
-            -webkit-background-size: 100vw 70vh; 
-            -moz-background-size: 100vw 70vh; 
-            -o-background-size: 100vw 70vh;
+        background-size: 100vw 80vh; 
+            -webkit-background-size: 100vw 80vh; 
+            -moz-background-size: 100vw 80vh; 
+            -o-background-size: 100vw 80vh;
     }
     
     .header-box {
-        margin-top: 4.5em;
+        margin-top: 4.2em;
         margin-left: .5em;
         margin-right: .5em;
     }
@@ -157,11 +179,11 @@ button.btn {
     }
 
     .header-text h1 {
-        font-size: 5vw;
+        font-size: 32px;
         margin: .2em 0 ;
     }
     
     .header-text p {
-        font-size: 2.7vw;
+        font-size: 18px;
     }
 }

@@ -44,7 +44,7 @@
 
 .about-main {
     height: auto;
-    margin: 2em 10em;
+    margin: 2em 9em;
     font-size: 21px;
     line-height: 1.1;
     padding-bottom: 1em;
@@ -135,6 +135,7 @@ button.btn {
 
     .about-main {
         display: grid;
+        margin: 1em 4em;
     }
 
     .about-sidebar {
@@ -184,6 +185,30 @@ button.btn {
     }
     
     .header-text p {
+        font-size: 18px;
+    }
+
+    .about-main {
+        margin: 1.5em 2em;
+    }
+
+    .about-main button {
+        margin-top: 0.5em;
+        font-size: 14px;
+        padding: 7px 10px;
+        border-radius: 28px;
+        line-height: 18px;
+    }
+
+    .about-main p {
+        font-size: 18px;
+    }
+
+    .main-title {
+        font-size: 22px;
+    }
+
+    .main-body li {
         font-size: 18px;
     }
 }

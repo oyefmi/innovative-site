@@ -1,3 +1,5 @@
+$color-primary: rgba(12, 52, 173, 0.7);
+
 footer {
     position: relative;
     margin-left: .95em;
@@ -26,7 +28,6 @@ footer .footer-bottom {
 }
 
 img {
-    /* height: auto; */
     border: 0;
     mix-blend-mode: multiply;
 }
@@ -82,18 +83,18 @@ img {
     background-color: transparent;
     text-decoration: none;
     font-size: 18px;
-}
 
-.footer-link:hover {
-    color: #0c34adb3;
-    font-size: 21px;
+    &:hover {
+        color: #0c34adb3;
+        font-size: 20px;
+    }
 }
 
 hr {
     margin-top: -0.2em;
 }
 
-.footer-right-bottom button.btn {
+.btn {
     margin-top: 1rem;
     width: 65%;
     background-color: rgba(12, 52, 173, 0.7);
@@ -105,14 +106,16 @@ hr {
     text-decoration: none;
     text-transform: uppercase;
     line-height: 15px;
-}
+    transition: transform .4s;
 
-button.btn:hover {
-    transform:translateY(-5px);
-}
-
-button.btn:active {
-    transform: translateY(-1.5px);
+    &:hover {
+        transform:translateY(-5px);
+        background-color: lighten(rgba(12, 52, 173, 0.7), 15%);
+    }
+    
+    &:active {
+        transform: translateY(-1.5px);
+    }
 }
 
 .footer-right-button {
@@ -125,7 +128,6 @@ button.btn:active {
     }
 
     .footer-left {
-        /* display: flex; */
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -139,7 +141,6 @@ button.btn:active {
     .footer-left-toprow .footer-address {
         justify-content: flex-end;
         width: 40%;
-        /* margin: 3em; */
         font-size: 22px;
     }
 

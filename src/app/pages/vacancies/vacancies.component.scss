@@ -1,0 +1,181 @@
+$color-primary: rgba(12, 52, 173, 0.7);
+
+.vacancies {
+    margin: 0 0.66em;
+    line-height: .9;
+    font-size: 24px;
+}
+
+.page-header {
+    padding: 10px 15px;
+    height: 80vh;
+    background: 
+        radial-gradient(ellipse at center, 
+        rgba(255, 255, 255, 0.2) 0%, 
+        rgba(89, 126, 248, 0.8) 100%), 
+        url(../../../assets/images/vacancy-2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center -10vh;
+    background-size: 100vw 120vh; 
+        -webkit-background-size: 100vw 110vh; 
+        -moz-background-size: 100vw 110vh; 
+        -o-background-size: 100vw 110vh;
+}
+
+.header-box {
+    position: relative;
+    top: 25%;
+    margin: auto 5em;
+    padding: 1.5em 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(89, 126, 248, 0.8);
+}
+
+.header-text {
+    margin: 1em 1em;
+    border: 1.5px solid #fff;
+}
+
+.header-text h1 {
+    font-size: 46px;
+    margin: .3em 0 ;
+}
+
+.header-text p {
+    margin: 0 .7em 1em .7em;
+}
+
+.vacancies-body {
+    margin: 2rem;
+}
+
+.vacancies-body h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 39px;
+}
+
+.adult-houses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.youth-houses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 300px;
+    width: 285px;
+    margin: 1.8em 1.8em;
+    padding: 1.3em 1em;
+    box-shadow: 12px 15px 20px rgb(0 0 0 / 15%);
+    border-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+}
+
+.card-heading {
+    font-weight: bolder;  
+}
+
+.more-info {
+    display: grid;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 0.5em;
+    background-color: rgba(12, 52, 173, 0.7);
+    color: #ffffff;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 22px;
+    transition: transform .4s;
+
+    &:hover {
+        transform:translateY(-5px);
+        background-color: lighten($color-primary, 20%);
+    }
+    
+    &:active {
+        transform: translateY(-1.5px);
+    }
+}
+
+
+
+@media(max-width: 1100px) {
+    .header-box {
+        margin: auto 3em;
+        padding: 1.5em 0;
+    }
+}
+
+@media(max-width: 950px) {
+    .header-box {
+        padding: 1em 0;
+        margin: auto 1em;
+    }
+
+    .header-text h1 {
+        font-size: 39px; ;
+    }
+    
+    .header-text p {
+        font-size: 21px;
+    }
+
+    .card-text {
+        font-size: 21px;
+    }
+
+    .more-info p {
+        font-size: 2.5vw;
+    }
+}
+
+@media(max-width: 745px) {
+    .more-info p {
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 575px) {
+    .page-header {
+        padding: 10px 7px;
+        height: 85vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100vw 85vh; 
+            -webkit-background-size: 100vw 90vh; 
+            -moz-background-size: 100vw 85vh; 
+            -o-background-size: 100vw 85vh;
+    }
+    
+    .header-box {
+        margin: auto .5em;
+    }
+
+    .header-text {
+        margin: 1em .5em;
+    }
+
+    .header-text h1 {
+        font-size: 32px;
+        margin: .2em 0 ;
+    }
+    
+    .header-text p {
+        font-size: 18px;
+    }
+}

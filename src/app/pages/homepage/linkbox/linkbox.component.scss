@@ -1,11 +1,11 @@
 .linkbox {
-  height: 30vh;
+  height: 34vh;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 34vw 40vh; 
-        -webkit-background-size: 34vw 30vh; 
-        -moz-background-size: 34vw 30vh; 
-        -o-background-size: 34vw 30vh;
+  background-size: 34vw 37vh; 
+        -webkit-background-size: 34vw 37vh; 
+        -moz-background-size: 34vw 37vh; 
+        -o-background-size: 34vw 37vh;
   border-style: solid;
   border-width: .04em;
   border-color: #ffffff;
@@ -13,9 +13,9 @@
 
 .title {
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
   position: relative;
-  top: 75%;
+  top: 72%;
   color: #ffffff;
   text-shadow: #597ef8 1px 0 10px;
 }
@@ -29,10 +29,10 @@
 
 @media (max-width: 900px) {
   .linkbox {
-    background-size: 100vw 32vh; 
-        -webkit-background-size: 100vw 32vh; 
-        -moz-background-size: 100vw 32vh; 
-        -o-background-size: 100vw 32vh;
+    background-size: 100vw 34vh; 
+        -webkit-background-size: 100vw 34vh; 
+        -moz-background-size: 100vw 34vh; 
+        -o-background-size: 100vw 34vh;
   }
 
   .title {
@@ -43,7 +43,7 @@
 @media (max-width: 650px) {
   .title {
     font-size: 22px;
-    margin-top: -1rem;
+    margin-top: -1em;
   }
 }
 

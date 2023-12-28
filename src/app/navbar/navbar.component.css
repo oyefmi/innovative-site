@@ -3,9 +3,9 @@
     height: 175px;
 }
 
-@media(max-width: 1300px) {
+@media(max-width: 1100px) {
     .navbar-brand img {
-        width: 21.4vw;
+        width: 25.4vw;
     }
 }
 
@@ -19,6 +19,6 @@
 @media(max-width: 575px) {
     .navbar-brand img {
         width: 40vw;
-        height: 16vh;
+        height: 15vh;
     }
 }

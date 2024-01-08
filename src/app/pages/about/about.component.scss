@@ -171,13 +171,14 @@ hr {
         height: 85vh;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100vw 85vh; 
+        background-size: 100vw 90vh; 
             -webkit-background-size: 100vw 90vh; 
-            -moz-background-size: 100vw 85vh; 
-            -o-background-size: 100vw 85vh;
+            -moz-background-size: 100vw 90vh; 
+            -o-background-size: 100vw 90vh;
     }
     
     .header-box {
+        top: 15%;
         margin: auto .5em;
     }
 

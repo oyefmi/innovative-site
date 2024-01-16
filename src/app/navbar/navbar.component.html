@@ -1,63 +1,14 @@
 <nav class="navbar navbar-expand-*">
     <div class="container-fluid">
-		<!-- <a class="navbar-brand" [routerLink]="'.'">
-            <img
-            src="../../assets/images/ISI_logo.jpg"
-            alt="ISI logo" 
-        /></a>
-		<button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-		<div [ngbCollapse]="isMenuCollapsed" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    <img
-                        src="../../assets/images/ISI_logo.jpg"
-                        alt="ISI logo" 
-                        width="300"
-                        height="200"
-                    />
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" (click)="isMenuCollapsed = !isMenuCollapsed"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" routerLink='' (click)="isMenuCollapsed = true">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/about-us' (click)="isMenuCollapsed = true">About</a>
-                        <a class="nav-link" routerLink='/unit-vacancies' (click)="isMenuCollapsed = true">Vacancies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/adult-program' (click)="isMenuCollapsed = true">Adult Program</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/youth-program' (click)="isMenuCollapsed = true">Youth Program</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/community-development-services' (click)="isMenuCollapsed = true">Community Develpoment Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/careers' (click)="isMenuCollapsed = true">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/contact-us' (click)="isMenuCollapsed = true">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-		</div> -->
-
         <a class="navbar-brand" routerLink='/'>
         <img
         src="../../assets/images/ISI_logo.jpg"
         alt="ISI logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <button class="navbar-toggler" (click)="open(content)" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             <span class="navbar-toggler-icon"></span>
         </button>
-          
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <ng-template #content let-offcanvas>
             <div class="offcanvas-header">
                 <h5 id="offcanvasRightLabel">
                     <img
@@ -66,34 +17,39 @@
                         width="200"
                         height="125"/>
                 </h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
             </div>
             <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" routerLink='' (click)="isMenuCollapsed = true">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/about-us' (click)="isMenuCollapsed = true">About</a>
-                        <a class="nav-link" routerLink='/unit-vacancies' (click)="isMenuCollapsed = true">Vacancies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/adult-program' (click)="isMenuCollapsed = true">Adult Program</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/youth-program' (click)="isMenuCollapsed = true">Youth Program</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/community-development-services' (click)="isMenuCollapsed = true">Community Develpoment Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/careers' (click)="isMenuCollapsed = true">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink='/contact-us' (click)="isMenuCollapsed = true">Contact Us</a>
-                    </li>
-                </ul>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" routerLink='' (click)="isMenuCollapsed = true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink='/about-us' (click)="isMenuCollapsed = true">About</a>
+                            <a class="nav-link" routerLink='/unit-vacancies' (click)="isMenuCollapsed = true">Vacancies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink='/adult-program' (click)="isMenuCollapsed = true">Adult Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink='/youth-program' (click)="isMenuCollapsed = true">Youth Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink='/community-development-services' (click)="isMenuCollapsed = true">Community Develpoment Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink='/careers' (click)="isMenuCollapsed = true">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink='/contact-us' (click)="isMenuCollapsed = true">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
+                </div>
             </div>
-          </div>
+        </ng-template>
 	</div>
 </nav>

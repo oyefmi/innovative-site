@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-*">
     <div class="container-fluid">
         <a class="navbar-brand" routerLink='/'>
-        <img
-        src="../../assets/images/ISI_logo.jpg"
-        alt="ISI logo" />
+            <img
+            src="../../assets/images/ISI_logo.jpg"
+            alt="ISI logo" />
         </a>
         <button class="navbar-toggler" (click)="open(content)" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             <span class="navbar-toggler-icon"></span>
@@ -23,26 +23,28 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" routerLink='' (click)="isMenuCollapsed = true">Home</a>
+                            <a class="nav-link" aria-current="page" routerLink='' (click)="offcanvas.close('Close click')">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink='/about-us' (click)="isMenuCollapsed = true">About</a>
-                            <a class="nav-link" routerLink='/unit-vacancies' (click)="isMenuCollapsed = true">Vacancies</a>
+                            <a class="nav-link" routerLink='/about-us' (click)="offcanvas.close('Close click')">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink='/adult-program' (click)="isMenuCollapsed = true">Adult Program</a>
+                            <a class="nav-link" routerLink='/unit-vacancies' (click)="offcanvas.close('Close click')">Vacancies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink='/youth-program' (click)="isMenuCollapsed = true">Youth Program</a>
+                            <a class="nav-link" routerLink='/adult-program' (click)="offcanvas.close('Close click')">Adult Program</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink='/community-development-services' (click)="isMenuCollapsed = true">Community Develpoment Services</a>
+                            <a class="nav-link" routerLink='/youth-program' (click)="offcanvas.close('Close click')">Youth Program</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink='/careers' (click)="isMenuCollapsed = true">Careers</a>
+                            <a class="nav-link" routerLink='/community-development-services' (click)="offcanvas.close('Close click')">Community Develpoment Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink='/contact-us' (click)="isMenuCollapsed = true">Contact Us</a>
+                            <a class="nav-link" routerLink='/careers' (click)="offcanvas.close('Close click')">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink='/contact-us' (click)="offcanvas.close('Close click')">Contact Us</a>
                         </li>
                     </ul>
                 </div>

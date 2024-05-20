@@ -60,6 +60,23 @@ img {
     font-size: 15px;
 }
 
+.footer-left-util a{
+    text-align: left;
+
+        &:link {
+            color: #FFFFFF;
+            margin: 0;
+            background-color: transparent;
+            text-decoration: none;
+            font-size: 15px;
+        }
+    
+        &:hover {
+            color: #0c34adb3;
+            font-size: 16px;
+        }
+}
+
 .footer-right-top {
     display: flex;
     flex-wrap: nowrap;

@@ -18,14 +18,9 @@ marker = {
   position: {lat: 39.42472, lng: -76.81131}
 }
 
-  
-  
-  constructor(private emailService: ContactEmailService) {  }
+constructor(private emailService: ContactEmailService) {  }
 
   onSubmit(contactForm: NgForm) {
-    // if (contactForm.invalid) {
-    //   return; 
-    // }
 
     this.emailService.sendEmail(contactForm.value.name, contactForm.value.email, contactForm.value.phoneNumber, contactForm.value.message).subscribe(
       response => {

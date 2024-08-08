@@ -14,7 +14,7 @@ export class NavbarComponent {
       private offcanvasService: NgbOffcanvas,
     ) {
       config.position = 'end';
-      // config.backdropClass = 'bg-primary';
+      config.backdropClass = 'bg-primary';
       config.keyboard = false;
     }
   

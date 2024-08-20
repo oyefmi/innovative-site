@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactEmailService {
 
-  private emailUrl = 'https://innovative-site-server-21859c1e1491.herokuapp.com//send-email';
+  private emailUrl = 'https://innovative-site-server-21859c1e1491.herokuapp.com/send-email';
+  //  private emailUrl = 'http://localhost:3000/send-email'; code for dev environment
 
   constructor(private http: HttpClient) { }
 

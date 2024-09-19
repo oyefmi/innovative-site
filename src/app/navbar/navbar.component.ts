@@ -7,14 +7,12 @@ import { NgbOffcanvas, NgbOffcanvasConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-    isMenuCollapsed = true;
-
-    constructor(
+   constructor(
       config: NgbOffcanvasConfig,
       private offcanvasService: NgbOffcanvas,
     ) {
       config.position = 'end';
-      config.backdropClass = 'bg-primary';
+      // config.backdropClass = 'bg-primary';
       config.keyboard = false;
     }
   

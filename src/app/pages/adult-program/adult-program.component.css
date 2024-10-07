@@ -1,5 +1,3 @@
-$color-primary: rgba(12, 52, 173, 0.7);
-
 .ap-page {
     margin: 0 0.66em;
     line-height: .9;
@@ -81,16 +79,16 @@ $color-primary: rgba(12, 52, 173, 0.7);
     text-transform: uppercase;
     line-height: 22px;
     transition: transform .4s;
+}
 
-    &:hover {
-        background-color: lighten($color-primary, 15%);
-        transform:translateY(-5px);
-    }
-    
-    &:active {
-        transform: translateY(-1.5px);
-        color: #ffffff;
-    }
+.btn:hover {
+    background-color: lighten(rgba(12, 52, 173, 0.7), 15%);
+    transform:translateY(-5px);
+}
+
+.btn:active {
+    transform: translateY(-1.5px);
+    color: #ffffff;
 }
 
 .main-title {

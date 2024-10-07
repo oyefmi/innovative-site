@@ -1,6 +1,4 @@
-$color-primary: rgba(12, 52, 173, 0.7);
-
-.cds-page {
+.yp-page {
     margin: 0 0.66em;
     line-height: .9;
     font-size: 24px;
@@ -13,7 +11,7 @@ $color-primary: rgba(12, 52, 173, 0.7);
         radial-gradient(ellipse at center, 
         rgba(255, 255, 255, 0.2) 0%, 
         rgba(89, 126, 248, 0.8) 100%), 
-        url(../../../assets/images/182616459_l.jpeg);
+        url(../../../assets/images/child_link_img.jpeg);
     background-repeat: no-repeat;
     background-position: center -10vh;
     background-size: 100vw 110vh; 
@@ -24,7 +22,7 @@ $color-primary: rgba(12, 52, 173, 0.7);
 
 .header-box {
     position: relative;
-    top: 30%;
+    top: 25%;
     margin: auto 5em;
     padding: 1.5em 0;
     text-align: center;
@@ -51,7 +49,7 @@ $color-primary: rgba(12, 52, 173, 0.7);
     border: 1.5px solid #fff;
 }
 
-.cds-main {
+.yp-main {
     height: auto;
     margin: 2em 9em;
     font-size: 21px;
@@ -76,7 +74,7 @@ $color-primary: rgba(12, 52, 173, 0.7);
 
 .btn {
     margin-top: 0.5em;
-    background-color: $color-primary;
+    background-color: rgba(12, 52, 173, 0.7);
     color: #ffffff;
     font-size: 17px;
     padding: 10px 15px;
@@ -88,7 +86,7 @@ $color-primary: rgba(12, 52, 173, 0.7);
     transition: transform .4s;
 
     &:hover {
-        background-color: lighten($color-primary, 15%);
+        background-color: lighten(rgba(12, 52, 173, 0.7), 15%);
         transform:translateY(-5px);
     }
     
@@ -115,7 +113,7 @@ hr {
 }
 
 @media(max-width: 1650px) {
-    .cds-main {
+    .yp-main {
         margin: 2em 5.5em;
     }
 
@@ -146,7 +144,7 @@ hr {
         font-size: 21px;
     }
 
-    .cds-main {
+    .yp-main {
         display: grid;
         margin: 1em 4em;
     }
@@ -200,11 +198,11 @@ hr {
         font-size: 18px;
     }
 
-    .cds-main {
+    .yp-main {
         margin: 1.5em 2em;
     }
 
-    .cds-main button {
+    .yp-main button {
         margin-top: 0.5em;
         font-size: 14px;
         padding: 7px 10px;
@@ -212,7 +210,7 @@ hr {
         line-height: 18px;
     }
 
-    .cds-main p {
+    .yp-main p {
         font-size: 18px;
     }
 
